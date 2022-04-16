@@ -1,0 +1,32 @@
+{
+  "name": "pdf-copy",
+  "version": "1.0.0",
+  "description": "Open and copy PDFs",
+  "main": "app.js",
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=17.0.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarrenMa/pdf-copy.git"
+  },
+  "author": "Darren Ma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarrenMa/pdf-copy/issues"
+  },
+  "homepage": "https://github.com/DarrenMa/pdf-copy#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "remove-pdf-password": "^0.1.0"
+  }
+}

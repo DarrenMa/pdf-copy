@@ -1,0 +1,9 @@
+services:
+  pdfcopy:
+    image: pdfcopy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      -  '/home/dma/projects/storage/pdfcopy/input:/app/files'
+      -  '/home/dma/projects/storage/pdfcopy/decrypted:/app/decrypted'

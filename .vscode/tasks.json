@@ -1,0 +1,30 @@
+{
+    "tasks": [
+        {
+            "type": "docker-run",
+            "label": "docker-run: debug",
+            "dependsOn": [
+                "docker-build"
+            ],
+            "dockerRun": {
+                "env": {
+                    "DEBUG": "*"
+                },
+                "volumes": [
+                    {
+                        "containerPath": "/app/files",
+                        "localPath": "/home/dma/projects/storage/pdfcopy/input"
+                    },
+                    {
+                        "containerPath": "/app/decrypted",
+                        "localPath": "/home/dma/projects/storage/pdfcopy/decrypted"
+                    }
+                ]
+            },
+            "node": {
+                "enableDebugging": true,
+                "inspectMode": "break"
+            },
+        }
+    ]
+}
